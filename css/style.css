@@ -1,0 +1,40 @@
+html {
+    font-size: 62.5%; /* 16px standard text size * 62.5% = 10px = 1rem */
+    box-sizing: border-box; 
+}
+body {
+    margin:0;
+    height: 100vh;
+    font-size: 1.6rem;
+    font-family: Helvetica, Arial, sans-serif;
+}
+.grid-container {
+    display: grid;
+    grid-template-areas: /*defining the template grid areas*/
+    'header'
+    'main'
+    'footer';
+    grid-template-columns: 1fr; /*1fr is 1 fragment, cover complete size*/
+    grid-template-rows: 5rem 1fr 5rem; /* for header, main and footer*/
+    height: 100%;
+}
+header {
+    grid-area: header; /*connecting the grid element to the header element described above*/
+    background-color: #203040;
+}
+main {
+    grid-area: main;
+    padding: 1rem;
+}
+footer{
+    grid-area:footer;
+    background-color: #203040;
+    color: #ffffff;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+ 
