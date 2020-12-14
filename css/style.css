@@ -31,10 +31,27 @@ footer{
     background-color: #203040;
     color: #ffffff;
 }
+a {
+    text-decoration: none;
+}
+a:hover {
+    color: #ff8000
+}
+header a {
+    color: #ffffff;
+    padding: 1rem;
+}
+a.brand {
+    font-size: 3rem; /* defines the size of the font*/
+    color: #ffffff; /*defines the foreground color of the brand*/
+    font-weight: bold; /*defines the font format, bold or italics etc*/
+}
 .row {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
- 
+.row.center {
+    justify-content: center;
+}
